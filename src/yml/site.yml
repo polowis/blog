@@ -1,0 +1,19 @@
+name: Hung Tran
+title: Polowis
+description: A personal website built with Jekyll
+tags:
+  - blog
+  - jekyll
+
+email: tranphuochung0912@gmail.com
+disqus_username: disqus_username
+show_hero: false
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+  - title: Feed
+    url: /feed.xml
