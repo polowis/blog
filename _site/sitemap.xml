@@ -177,13 +177,14 @@
             
         </url>
     
-    
         <url>
-            <loc>/welcome-to-the-desert-of-the-real/view-all/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2019-05-17</lastmod>
+            <loc>/assets/css/style.css</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
         </url>
+    
     
         <url>
             <loc>/welcome-to-the-desert-of-the-real/</loc>
@@ -193,35 +194,7 @@
         </url>
     
         <url>
-            <loc>/welcome-to-the-desert-of-the-real/2/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2019-05-17</lastmod>
-        </url>
-    
-        <url>
-            <loc>/far-far-away-behind-the-word-mountains/2/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2019-05-13</lastmod>
-        </url>
-    
-        <url>
             <loc>/far-far-away-behind-the-word-mountains/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2019-05-13</lastmod>
-        </url>
-    
-        <url>
-            <loc>/far-far-away-behind-the-word-mountains/view-all/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2019-05-13</lastmod>
-        </url>
-    
-        <url>
-            <loc>/far-far-away-behind-the-word-mountains/3/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2019-05-13</lastmod>

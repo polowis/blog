@@ -201,12 +201,12 @@ November 22, 2018
 <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
 
 <ul>
-  <li><strong>To bold text</strong>, use <code class="highlighter-rouge">&lt;strong&gt;</code>.</li>
-  <li><em>To italicize text</em>, use <code class="highlighter-rouge">&lt;em&gt;</code>.</li>
-  <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="highlighter-rouge">title</code> attribute for the full phrase.</li>
-  <li>Citations, like <cite>— Thiago Rossener</cite>, should use <code class="highlighter-rouge">&lt;cite&gt;</code>.</li>
-  <li><del>Deleted</del> text should use <code class="highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="highlighter-rouge">&lt;ins&gt;</code>.</li>
-  <li>Superscript <sup>text</sup> uses <code class="highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="highlighter-rouge">&lt;sub&gt;</code>.</li>
+  <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+  <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+  <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+  <li>Citations, like <cite>— Thiago Rossener</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+  <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+  <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
 </ul>
 
 <p>Most of these elements are styled by browsers with few modifications on our part.</p>
@@ -214,20 +214,23 @@ November 22, 2018
 <!--page-->
 
 <h1 id="heading-1">Heading 1</h1>
+
 <h2 id="heading-2">Heading 2</h2>
+
 <h3 id="heading-3">Heading 3</h3>
+
 <h4 id="heading-4">Heading 4</h4>
 
 <p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 
 <h2 id="code">Code</h2>
 
-<p>Cum sociis natoque penatibus et magnis dis <code class="highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
+<p>Cum sociis natoque penatibus et magnis dis <code class="language-plaintext highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example can be run directly in your JavaScript console</span>
 
 <span class="c1">// Create a function that takes two arguments and returns the sum of those arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">~|=|</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
 
 <span class="c1">// Call the function</span>
 <span class="nx">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
@@ -327,6 +330,15 @@ November 22, 2018
                         
                         
                             <li>
+                                <a href="/welcome-to-the-desert-of-the-real/">
+                                    
+                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg">
+                                    
+                                    <h3>jQuery</h3>
+                                </a>
+                            </li>
+                        
+                            <li>
                                 <a href="/far-far-away-behind-the-word-mountains/">
                                     
                                         <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821648/theme5_wmutla.jpg">
@@ -341,15 +353,6 @@ November 22, 2018
                                         <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1506079212/jekflix-capa_vfhuzh.png">
                                     
                                     <h3>The quick brown fox jumps over a lazy dog</h3>
-                                </a>
-                            </li>
-                        
-                            <li>
-                                <a href="/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/">
-                                    
-                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559820489/js-code_n83m7a.jpg">
-                                    
-                                    <h3>A wonderful serenity has taken possession of my entire soul</h3>
                                 </a>
                             </li>
                         
@@ -413,25 +416,25 @@ November 22, 2018
                 
                 
                     <li>
-                        <a href="/a-wonderful-serenity-has-taken-possession-of-my-entire-soul/">
+                        <a href="/welcome-to-the-desert-of-the-real/">
                             <figure>
                                 
-                                    <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559820489/js-code_n83m7a.jpg">
+                                    <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg">
                                 
                             </figure>
-                            <h3>A wonderful serenity has taken possession of my entire soul</h3>
+                            <h3>jQuery</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </a>
                     </li>
                 
                     <li>
-                        <a href="/do-you-believe-that-a-spider-can-dance/">
+                        <a href="/far-far-away-behind-the-word-mountains/">
                             <figure>
                                 
-                                    <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559824306/theme13_dshbqx.jpg">
+                                    <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821648/theme5_wmutla.jpg">
                                 
                             </figure>
-                            <h3>Do you believe that a spider can dance?</h3>
+                            <h3>Far far away behind the word mountains</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </a>
                     </li>
@@ -728,8 +731,11 @@ Most of these elements are styled by browsers with few modifications on our part
 
 
 Heading 1
+
 Heading 2
+
 Heading 3
+
 Heading 4
 
 Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
@@ -741,7 +747,7 @@ Cum sociis natoque penatibus et magnis dis code element montes, nascetur ridicul
 // Example can be run directly in your JavaScript console
 
 // Create a function that takes two arguments and returns the sum of those arguments
-var adder ~|=| new Function(&quot;a&quot;, &quot;b&quot;, &quot;return a + b&quot;);
+var adder = new Function(&quot;a&quot;, &quot;b&quot;, &quot;return a + b&quot;);
 
 // Call the function
 adder(2, 6);
@@ -827,7 +833,7 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 
 ",
-            "wordcount": "641",
+            "wordcount": "651",
             "inLanguage": "en",
             "dateCreated": "2018-11-22/",
             "datePublished": "2018-11-22/",
