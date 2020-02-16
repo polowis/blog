@@ -39,7 +39,7 @@ Think about this famous quote from **Martin Fowler**:  <br>
 
 Poorly written code may be fast but in short term, a few months later you will be able to understand you should've spent time writing good code. 
 
-## If clean code such a good practice, why developers don't do it right?
+## If clean code such a good practice, why developers don't do it?
 
 There are plenty of reasons why most developers code are not clean enough. Such as: some developers think they are professional, some have no idea how to code and some just care about the functional of the software. In fact, it's true, customers they don't care about how you write code, what lanuage or what library you're using but I'm going to talk about this later. 
 
