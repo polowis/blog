@@ -26,7 +26,7 @@ This post does not show you how to write clean code but rather shows you some ex
 
 What is clean code **clean code**? Clean code  is the code that everyone can understand, easy to read and maintainable. You might think that's easy, I can do that! But have you ever tried to look at a piece of code in your previous projects? Is it expressive enough for you to be able to understand within a couple of minutes? No? Then your code is not really considered to be clean enough. 
 
-The code you write will never be perfect but that's fine. Writing a good piece of code is hard, and you must practice and watch others fail. A programmer who writes clean code is an artist who can paint a picture. When you look at the picture, you know whether if it looks good or not but by recognising good art does not mean you know how to paint. Same goes for clean code, being able to recognise good code does not mean you know how to write it. 
+The code you write will never be perfect but that's fine. Writing a good piece of code is hard, and you must practice and watch others fail and learn from their mistakes. A programmer who writes clean code is an artist who can paint a picture. When you look at the picture, you know whether if it looks good or not but by recognising good art does not mean you know how to paint. Same goes for clean code, being able to recognise good code does not mean you know how to write it. 
 
 ## What is clean code?
 
