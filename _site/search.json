@@ -3,6 +3,14 @@
   
   
     {
+      "title"    : "Teach yourself how to write readable code",
+      "tags"     : "code, cleancode, programming, and books",
+      "categories" : "code",
+      "url"      : "/teach-yourself-how-to-write-readable-code/",
+      "date"     : "02/16/2020"
+    } ,
+  
+    {
       "title"    : "jQuery",
       "tags"     : "welcome and blog",
       "categories" : "blog",
