@@ -15,3 +15,23 @@ Install gulp client
 ```
 $ npm install gulp-cli -g
 ```
+
+## Setup
+1. Fork this repository
+2. CD to your project Folder
+3. Install npm package
+```
+$ npm install
+```
+4. Install Ruby dependencies
+```
+$ bundle install
+```
+5. Build Jekyll 
+```
+$ bundle exec jekyll build
+```
+6. Run gulp and view the result in your browser
+```
+$ gulp 
+```
