@@ -65,7 +65,7 @@ You might think that this function looks good enough. However, we can rewrite th
 ```js
 function getCustomerAttributes()
 {
-    return this.isVerifiedUser(user) ? this.getUserLongName() : this.getUserShortName();
+    return this.isVerifiedUser(user) ? this.getUserLongName(user) : this.getUserShortName(user);
 }
 
 /**
@@ -79,7 +79,7 @@ function isVerifiedUser(user)
 /**
 *
 */
-function getUserLongName()
+function getUserLongName(user)
 {
     return user.firstName + ' ' + user.middleName + ' ' +user.lastName;
 }
@@ -87,7 +87,7 @@ function getUserLongName()
 /**
 *
 */
-function getUserShortName()
+function getUserShortName(user)
 {
      return user.firstName + ' ' + user.lastName;
 }
