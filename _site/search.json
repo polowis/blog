@@ -3,6 +3,14 @@
   
   
     {
+      "title"    : "Some bad habits you should be avoided as a developer",
+      "tags"     : "programming",
+      "categories" : "blog",
+      "url"      : "/some-bad-habits-you-should-be-avoided-as-a-developer/",
+      "date"     : "02/17/2020"
+    } ,
+  
+    {
       "title"    : "Teach yourself how to write readable code",
       "tags"     : "code, cleancode, programming, and books",
       "categories" : "code",
