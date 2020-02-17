@@ -57,7 +57,7 @@ When you work on multiple projects, you will understand when and why you need to
 
 ## I'm the best
 
-IT people are often the ones who have logical minds, know how logical thinking should be... And sometimes you might think that you are smarter than others.
+IT people are often the ones who have logical minds, know how logical thinking should be. And sometimes people might think that they are smarter than others.
 
 If you're surrounded by ignorant people, you might think that well I'm smarter and better than everyone. Confidence is good, there is nothing wrong about it. I always say this to myself <i style="background-color:lightgreen;">Be confident but no arrogant.</i>  I know my abilites, I know what I know and I know what I don't know. I usually see people being arrogant just because they score higher than other people in my class but the fact that they haven't gone to the ocean yet. 
 
@@ -69,6 +69,6 @@ The best way to get rid of this to get in a good company, or have a chat with ot
 
 ## Do you have any of these habits?
 
-Everyone makes mistake, so do you, the only different is that some people learn from their mistakes but some don't. 
+Everyone makes mistakes, so do you, the only different is that some people learn from their mistakes but some don't. 
 
 
