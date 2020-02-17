@@ -232,7 +232,7 @@ February 16, 2020
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">getCustomerAttributes</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">isVerifiedUser</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="p">?</span> <span class="k">this</span><span class="p">.</span><span class="nx">getUserLongName</span><span class="p">()</span> <span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">getUserShortName</span><span class="p">();</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">isVerifiedUser</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="p">?</span> <span class="k">this</span><span class="p">.</span><span class="nx">getUserLongName</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">getUserShortName</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="cm">/**
@@ -246,7 +246,7 @@ February 16, 2020
 <span class="cm">/**
 *
 */</span>
-<span class="kd">function</span> <span class="nx">getUserLongName</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">getUserLongName</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="k">return</span> <span class="nx">user</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">+</span> <span class="dl">'</span><span class="s1"> </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">user</span><span class="p">.</span><span class="nx">middleName</span> <span class="o">+</span> <span class="dl">'</span><span class="s1"> </span><span class="dl">'</span> <span class="o">+</span><span class="nx">user</span><span class="p">.</span><span class="nx">lastName</span><span class="p">;</span>
 <span class="p">}</span>
@@ -254,7 +254,7 @@ February 16, 2020
 <span class="cm">/**
 *
 */</span>
-<span class="kd">function</span> <span class="nx">getUserShortName</span><span class="p">()</span>
+<span class="kd">function</span> <span class="nx">getUserShortName</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span>
 <span class="p">{</span>
      <span class="k">return</span> <span class="nx">user</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">+</span> <span class="dl">'</span><span class="s1"> </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">user</span><span class="p">.</span><span class="nx">lastName</span><span class="p">;</span>
 <span class="p">}</span>
@@ -293,20 +293,20 @@ February 16, 2020
                         
                         
                             <li>
+                                <a href="/reflection-journal-1-lets-talk-about-jquery/">
+                                    
+                                        <img src="https://cdn-media-1.freecodecamp.org/images/0*ngXgBNNdx6iiWP8q.png">
+                                    
+                                    <h3>Reflection Journal #1: Let's talk about jQuery</h3>
+                                </a>
+                            </li>
+                        
+                            <li>
                                 <a href="/some-bad-habits-you-should-be-avoided-as-a-developer/">
                                     
                                         <img src="https://www.mockrabbit.com/wp-content/uploads/2018/12/Become-a-Full-Stack-Developers.jpg">
                                     
                                     <h3>Some bad habits you should be avoided as a developer</h3>
-                                </a>
-                            </li>
-                        
-                            <li>
-                                <a href="/welcome-to-the-desert-of-the-real/">
-                                    
-                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg">
-                                    
-                                    <h3>jQuery</h3>
                                 </a>
                             </li>
                         
@@ -379,6 +379,18 @@ February 16, 2020
                 
                 
                     <li>
+                        <a href="/reflection-journal-1-lets-talk-about-jquery/">
+                            <figure>
+                                
+                                    <img src="https://cdn-media-1.freecodecamp.org/images/0*ngXgBNNdx6iiWP8q.png">
+                                
+                            </figure>
+                            <h3>Reflection Journal #1: Let's talk about jQuery</h3>
+                            <p>Week 2, Semester 1. A lot of websites rely on jQuery. But is it neccessary to learn it?</p>
+                        </a>
+                    </li>
+                
+                    <li>
                         <a href="/some-bad-habits-you-should-be-avoided-as-a-developer/">
                             <figure>
                                 
@@ -387,18 +399,6 @@ February 16, 2020
                             </figure>
                             <h3>Some bad habits you should be avoided as a developer</h3>
                             <p>If you want to become a really good developer, you should avoid these habits.</p>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/welcome-to-the-desert-of-the-real/">
-                            <figure>
-                                
-                                    <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg">
-                                
-                            </figure>
-                            <h3>jQuery</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </a>
                     </li>
                 
@@ -714,7 +714,7 @@ You might think that this function looks good enough. However, we can rewrite th
 
 function getCustomerAttributes()
 {
-    return this.isVerifiedUser(user) ? this.getUserLongName() : this.getUserShortName();
+    return this.isVerifiedUser(user) ? this.getUserLongName(user) : this.getUserShortName(user);
 }
 
 /**
@@ -728,7 +728,7 @@ function isVerifiedUser(user)
 /**
 *
 */
-function getUserLongName()
+function getUserLongName(user)
 {
     return user.firstName + ' ' + user.middleName + ' ' +user.lastName;
 }
@@ -736,7 +736,7 @@ function getUserLongName()
 /**
 *
 */
-function getUserShortName()
+function getUserShortName(user)
 {
      return user.firstName + ' ' + user.lastName;
 }
@@ -761,7 +761,7 @@ Clean Code by Robert C. Martin
 This is one of my favorite technical books and I would highly recommend every developer to read it. It shows you how to write a good piece of code and the consequences of poorly written code.  
 
 ",
-            "wordcount": "1087",
+            "wordcount": "1095",
             "inLanguage": "en",
             "dateCreated": "2020-02-16/",
             "datePublished": "2020-02-16/",

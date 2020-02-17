@@ -3,6 +3,14 @@
   
   
     {
+      "title"    : "Reflection Journal #1: Let&#39;s talk about jQuery",
+      "tags"     : "reflection",
+      "categories" : "blog",
+      "url"      : "/reflection-journal-1-lets-talk-about-jquery/",
+      "date"     : "02/17/2020"
+    } ,
+  
+    {
       "title"    : "Some bad habits you should be avoided as a developer",
       "tags"     : "programming",
       "categories" : "blog",
@@ -16,14 +24,6 @@
       "categories" : "code",
       "url"      : "/teach-yourself-how-to-write-readable-code/",
       "date"     : "02/16/2020"
-    } ,
-  
-    {
-      "title"    : "jQuery",
-      "tags"     : "welcome and blog",
-      "categories" : "blog",
-      "url"      : "/welcome-to-the-desert-of-the-real/",
-      "date"     : "05/17/2019"
     } ,
   
     {

@@ -195,6 +195,13 @@
     
     
         <url>
+            <loc>http://localhost:4000/reflection-journal-1-lets-talk-about-jquery/</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+            <lastmod>2020-02-17</lastmod>
+        </url>
+    
+        <url>
             <loc>http://localhost:4000/some-bad-habits-you-should-be-avoided-as-a-developer/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
@@ -206,13 +213,6 @@
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
             <lastmod>2020-02-16</lastmod>
-        </url>
-    
-        <url>
-            <loc>http://localhost:4000/welcome-to-the-desert-of-the-real/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2019-05-17</lastmod>
         </url>
     
         <url>
