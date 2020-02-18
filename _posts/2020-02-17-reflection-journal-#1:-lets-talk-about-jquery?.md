@@ -15,7 +15,7 @@ paginate: false
 
 ## Before you read this post
 
-This website was built with Jekyll, you can find the entire source code of this website on my [github](https://github.com/polowis/blog). 
+This website was built with [Jekyll](https://jekyllrb.com/), you can find the entire source code of this website on my [github](https://github.com/polowis/blog). 
 
 You can find all the posts about reflection journal by clicking on the tag :)
 
