@@ -74,8 +74,20 @@ $('#hashiddeneffect').on('change',function(){
 		}
 });
 ```
-### What do I usually do in IT class?
-I read technial books during class time or working on my other projects, learning new technologies/languages. I spend most of my time to improve my problem solving skills. And when I have nothing to do, I do my classwork :). I also built this blog during class time last week :)
+### Classwork
+
+I built with website using Jekyll (a static-website generator written in Ruby). I spent most of the time in class setting up this blog. The normal html page is great, but when I try to create a website with several posts, Jekyll does a better job for me. I can seprate my website into multiple layouts such as header, footer, etc. Jekyll is fast and simple. For example, take a look at the code snippet below:
+
+```html
+{% if user.age > 18 %}
+Login here
+{% else %}
+Sorry, you are too young
+{% endif %}
+
+```
+
+Even non-code can understand the code above. Jekyll is faster than any wordpress site, if you compare Jekyll site with any other site on [Google Page Insight](https://developers.google.com/speed/pagespeed/insights/)
 
 
 
