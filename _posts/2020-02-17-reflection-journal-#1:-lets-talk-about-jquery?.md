@@ -23,7 +23,7 @@ You can find all the posts about reflection journal by clicking on the tag :)
 jQuery makes every web developer life a lot easier. And lots of website rely on jQuery but do you need it? I don't have much experience working with jQuery. Why? Because I prefer working with Vanilla JavaScript (JavaScript without any other libraries/frameworks).
 
 ### The jQuery's trap
-jQuery was the first library I used when I got myself into web development, just a few months before school had a chance to teach me about this library. I usually see lots of starters know how to write code in jQuery but not JavaScript. They don't even know how to deal with the DOM directly or how to code in Vanilla JavaScript if they don't have jQuery. Because this library does everything for them, they don't even bother learing proper JavaScript. Potentially create a huge gap in knowledge. 
+jQuery was the first library I used when I got myself into web development, just a few months before school had a chance to teach me about this library. I usually see lots of starters know how to write code in jQuery but not JavaScript. They don't even know how to deal with the DOM directly or how to code in Vanilla JavaScript if they don't have jQuery. Because this library does everything for them, they don't even bother learing proper JavaScript. Eventually, create a huge gap in knowledge. 
 
 There are lots of JavaScript libraries out there with different style of writing. But learning the basic will help them understand the syntax a lot easier and faster. 
 ```js
