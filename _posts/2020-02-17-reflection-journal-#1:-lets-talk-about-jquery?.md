@@ -78,12 +78,12 @@ $('#hashiddeneffect').on('change',function(){
 
 I built with website using Jekyll (a static-website generator written in Ruby). I spent most of the time in class setting up this blog. The normal html page is great, but when I try to create a website with several posts, Jekyll does a better job for me. I can seprate my website into multiple layouts such as header, footer, etc. Jekyll is fast and simple. For example, take a look at the code snippet below:
 
-```
-{% if user.age > 18 %}
+```html
+<!--{% if user.age > 18 %}-->
 Login here
-{% else %}
+<!--{% else %}-->
 Sorry, you are too young
-{% endif %}
+<!--{% endif %}-->
 
 ```
 
