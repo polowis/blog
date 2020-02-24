@@ -46,7 +46,7 @@ def index():
     return MyController.myfunction()
 ```
 
-Hmm, so it looks a lot cleaner, but there are few things that I want to get rid of. the function and the route part. How am I going to implement this? The code base is somewhat big, here are some examples of it
+Hmm, so it looks a lot cleaner, but there are few things that I want to get rid of. the function and the route part. How am I going to implement this? The code base is somewhat big, here are some examples of it. 
 
 ```python
 
@@ -65,7 +65,7 @@ route.get('/', 'app.http.controller.mycontroller.myFunction')
 
 
 ```
-But still, it did not satify me. I tried to improve it. And here is my additional feature on routing and controller
+But still, it did not satisfy me. I tried to improve it. After many hours, here is my additional feature on routing and controller
 
 ```python
 from app import app
@@ -101,4 +101,4 @@ class MyController(Controller):
 
 ```
 
-And that's it. Just by defining a few things, everything will be setup correctly. I'm still trying to improve this framework so it can handle most of the stuff for me such as authentication, controller, model, validation, routing, database, etc.
+And that's it. Just by defining a few things, everything will be setup correctly. I'm still trying to improve this framework so it can handle most of the stuff for me such as authentication, controller, model, validation, routing,database, etc.
