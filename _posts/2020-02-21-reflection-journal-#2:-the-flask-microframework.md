@@ -18,11 +18,12 @@ paginate: false
 ---
 
 ## When to use Flask?
-Web framework isn't new to me, I have worked on several different frameworks such as Express, Laravel, Symfony, etc. Flask isn't new to me either, I have read Flask's documentation a while ago and personally flask may not always be a good tool to use for the job. 
+Web framework isn't new to me, I have worked on several different frameworks such as Express, Laravel, Symfony, etc. Flask isn't new to me either, I have read Flask's documentation a while ago and personally, I think flask may not always be a good tool to use for the job. 
 
 **Why is that?**
 
 Flask's API is very limited, unlike Django's. You can't do much with flask unless you have to use other libraries or flask extension such as flask-login, flask-classy, etc. Flask is not a bad choice, I like flask because of its flexibility and simplicity. It has no design or structure pattern, basically you can do whatever you want. But when it comes to building a larger application, Django might does a better job at handling. 
+
 
 ## The Pandoru framework
 
