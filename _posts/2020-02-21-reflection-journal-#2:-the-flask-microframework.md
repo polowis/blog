@@ -27,7 +27,7 @@ Flask's API is very limited, unlike Django's. You can't do much with flask unles
 
 ## The Pandoru framework
 
-When it comes to the matter of clean code, flask isn't the right choice. The code might look great at the beginning, but as I expanding the web, it looks a lot more messy. 
+When it comes to the matter of clean code, flask isn't the right choice. The code might look great at the beginning, but as I expand the app, it looks a lot more messy. 
 
 Given this routing example
 ```python
