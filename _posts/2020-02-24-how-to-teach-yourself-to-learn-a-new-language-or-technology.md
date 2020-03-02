@@ -42,4 +42,4 @@ Before you move to this stage, you need to understand the fundamental concept. I
 
 Most online courses or programming tutorial or whatever you call it. They mainly focus on information knowledge, and skip fundamental knowledge. You can get a job easier than other people but as time goes on, you will eventually notice that you're falling behind because there is a huge gap in your knowledge. And trust me, no one wants to be in that position, they just blindly choose the wrong path. 
 
-Usually information knowledge involves task such as working with small libraries
+Usually information knowledge involves task such as working with small libraries, 
