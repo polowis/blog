@@ -3,7 +3,7 @@ date: 2020-03-02 08:18:09
 layout: post
 title: "Reflection Journal #3: To-do list with jQuery"
 subtitle:
-description: I built a to-do list app with jQuery in 1 hour.
+description: Week 4, Semester 1. I built a to-do list app with jQuery in 1 hour.
 image: https://www.edureka.co/blog/wp-content/uploads/2018/12/What-is-JavaScript-jQuery-Tutorial-1.png
 optimized_image:
 category: blog
