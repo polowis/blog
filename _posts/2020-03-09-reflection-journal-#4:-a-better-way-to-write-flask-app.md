@@ -23,7 +23,7 @@ The development of this package or framework will be somewhat complicated but wi
 
 ## The new approach
 
-Building a new framework on top of Flask
+Building a new framework on top of Flask. All of the below functons are implemented inside framework folder. If you wish to change the location of the framework folder, the path will need to rewrite. For example, ```app.framework.requests``` to ```pandoru.request``` or ```framework.request``` if you would like to move it outside app folder.
 
 ### The Flask request
 
