@@ -4,8 +4,7 @@ layout: post
 title: "How to teach yourself to learn a new language or technology"
 subtitle:
 description: Your knowledge is not enough, I'll tell you why.
-image: https://s3-us-west-1.amazonaws.com/moretothat.com/wp-content/uploads/2018/04/30192504/B11-Knowledge-Poles.png
-optimized_image:
+image: https://www.imperial.edu.au/wp-content/uploads/2018/04/12.jpg
 category: blog
 tags:
     - programming

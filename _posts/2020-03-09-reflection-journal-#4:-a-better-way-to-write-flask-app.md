@@ -6,7 +6,7 @@ subtitle:
 description: Week 5, Semester 1. A closer look at Flask's core
 image: https://www.goodfirms.co/glossary/wp-content/uploads/2017/07/Web-Framework.png
 optimized_image:
-category:
+category: blog
 tags:
     - Python
     - programming
