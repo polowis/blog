@@ -189,4 +189,4 @@ form = FormRequest({
 })
 ```
 
-And instead of having like ```form.is_validated()```, the validation part can just redirect the user back with error code if fails, there is no need to have is_validated() function. 
+And instead of having like ```form.is_validated()```, the validation part can just redirect the user back with error code if fails, there is no need to have ```is_validated()``` function. 
