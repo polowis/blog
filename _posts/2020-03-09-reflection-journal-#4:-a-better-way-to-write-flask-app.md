@@ -138,7 +138,7 @@ There are any validation attributes such ass
 ```py
 form = FormRequest({
     'user_email': 'email',
-    'username': 'alphanumeric,
+    'username': 'alphanumeric',
     'remember_me': 'boolean'
     #more goes here...
 })
@@ -173,7 +173,7 @@ I want to improve the FormRequest class instead of just validate one attribute:
 ```py
 form = FormRequest({
     'user_email': 'email',
-    'username': 'alphanumeric,
+    'username': 'alphanumeric',
     'remember_me': 'boolean'
     #more goes here...
 })
