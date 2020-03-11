@@ -157,7 +157,7 @@ You can just display the errors like how you usually do in flask
     {% endwith %}
 {% endraw %}
 ```
-Alternatively, if I wish to display specify message, I can just simple use the ``` error_message()``` function. Again, this is built inside framework folder. I don't have to reimplement it again for other projects
+Alternatively, if I wish to display specify message, I can just simply use the ``` error_message()``` function. Again, this is built inside framework folder. I don't have to reimplement it again for other projects
 
 ```html
 {% raw %}
