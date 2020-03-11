@@ -27,7 +27,7 @@ Building a new framework on top of Flask. All of the below functons are implemen
 
 ### The power of controller
 
-As discussed earlier in the previous [post](https://polowis.netlify.com/reflection-journal-2-the-flask-microframework/), I have made somewhat big update for the controller part. Before everytime I delcare a controller file, I have to import it through ```__init__.py`` file. And then that file is automatically imported to kernel folder. It takes quite a few works to do it but with new version. All I have to do is to create a ```.py``` file with the word ```controller``` or ```Controller``` at the end. 
+As discussed earlier in the previous [post](https://polowis.netlify.com/reflection-journal-2-the-flask-microframework/), I have made somewhat big update for the controller part. Before everytime I delcare a controller file, I have to import it through ```__init__.py``` file. And then that file is automatically imported to kernel folder. It takes quite a few works to do it but with new version. All I have to do is to create a ```.py``` file with the word ```controller``` or ```Controller``` at the end. 
 
 This is the full code for this part
 ```py
