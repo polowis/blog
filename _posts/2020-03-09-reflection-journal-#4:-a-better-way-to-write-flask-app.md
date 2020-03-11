@@ -100,7 +100,7 @@ class UserController(Controller):
         pass
 ```
 
-Now I need to fill in my login_action method with the logic to validate the new user post. To do this, I can use the ```is_validated()``` method provided by ```framework.request``` . If the validation rules pass, the code will keep executing normally. 
+Now I need to fill in my login_action method with the logic to validate the new user post. To do this, I can use ```FormRequest()``` class from ```framework.request``` then I will need to check if the validation passes. To do this, I can use the ```is_validated()``` method provided by ```framework.request``` . If the validation rules pass, the code will keep executing normally. 
 
 However, if it fails, an exception will be thrown and the proper error response will automatically be sent back to the user.
 
