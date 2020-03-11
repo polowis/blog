@@ -27,7 +27,7 @@ Building a new framework on top of Flask. All of the below functons are implemen
 
 ### The Flask request
 
-In the [docs](https://flask.palletsprojects.com/api/#flask.Request) describes all the available attribute available on request. Some common attributes are ```request.args``` ```request.form``` ```request.values``` follow by either ```get()``` or ```getlist``` functions. However, the code will look a lot messy. We have to remember the correct attributes and if we use the wrong one it will not work properly.
+In the [docs](https://flask.palletsprojects.com/api/#flask.Request) describes all the available attribute available on request. Some common attributes are ```request.args``` ```request.form``` ```request.values``` follow by either ```get()``` or ```getlist()``` functions. However, the code will look a lot messy. We have to remember the correct attributes and if we use the wrong one it will not work properly.
 
 I came up with the new way of approaching. 
 
