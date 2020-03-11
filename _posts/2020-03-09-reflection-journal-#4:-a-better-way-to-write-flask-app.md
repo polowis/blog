@@ -183,7 +183,7 @@ I would like to make it better by having more attribute field
 ```py
 form = FormRequest({
     'user_email': 'required|email|max:32|min:1',
-    'username': 'required|alphanumeric|min: 8,
+    'username': 'required|alphanumeric|min: 8',
     'remember_me': 'boolean'
     #more goes here...
 })
