@@ -25,6 +25,39 @@ The development of this package or framework will be somewhat complicated but wi
 
 Building a new framework on top of Flask. All of the below functons are implemented inside framework folder. If you wish to change the location of the framework folder, the path will need to rewrite. For example, ```app.framework.requests``` to ```pandoru.request``` or ```framework.request``` if you would like to move it outside app folder.
 
+### The power of controller
+
+As discussed earlier in the previous [post](https://polowis.netlify.com/reflection-journal-2-the-flask-microframework/), I have made somewhat big update for the controller part. Before everytime I delcare a controller file, I have to import it through ```__init__.py`` file. And then that file is automatically imported to kernel folder. It takes quite a few works to do it but with new version. All I have to do is to create a ```.py``` file with the word ```controller``` or ```Controller``` at the end. 
+
+This is the full code for this part
+```py
+"""
+Reposible for handling controller files. DO NOT MODIFY!
+"""
+import os
+controller_files = os.listdir('./app/http/controllers')
+controllers = {}
+files = []
+
+def file_endswith(filename, suffix):
+    """Check if file correctly ends"""
+    return filename.endswith(suffix) or filename.endswith(suffix.lower())
+
+for controller_file in controller_files:
+    filename, file_extension = os.path.splitext(controller_file)
+    if file_extension == '.py':
+        controllers.update({filename: file_extension})
+
+for controller_name in controllers.keys():
+    if file_endswith(controller_name, 'Controller'):
+        files.append(controller_name)
+
+
+__all__ = files
+```
+
+This will need to be improved such as recursively looping through subfolders. 
+
 ### The Flask request
 
 In the [docs](https://flask.palletsprojects.com/api/#flask.Request) describes all the available attribute available on request. Some common attributes are ```request.args``` ```request.form``` ```request.values``` follow by either ```get()``` or ```getlist()``` functions. However, the code will look a lot messy. We have to remember the correct attributes and if we use the wrong one it will not work properly.
