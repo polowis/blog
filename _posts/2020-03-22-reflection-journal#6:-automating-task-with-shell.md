@@ -6,7 +6,7 @@ subtitle:
 description: week 7, semester 1. Automating task with shell
 image: https://www.howtogeek.com/wp-content/uploads/2011/07/banner-011.png
 optimized_image:
-category:
+category: code
 tags:
     - shell
     - cli
@@ -138,6 +138,7 @@ Nodejs installation is a complicated process, because I'm using a Mac device, I 
 If windows, I will need to install chocolatey (just like brew) then use it to install nvm and then node.
 
 Here is example of installation:
+
 ```sh
 isNVMInstalled(){
     if which nvm > /dev/null
