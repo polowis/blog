@@ -196,7 +196,7 @@ From Axios's github repository, its features include:
 
 Let's take a look at how I'm going to deal with the todolist task. Everytime I make a new task, I want to push the changes to the database without refreshing the webpage but also update the current list of tasks with the data from the database. 
 
-I'm going to to write a function called ```addItem```. The function is responsible for push new task to the database. When the database receive the requests, if it successfully saves them to the database, it will return the message ```Success``` and also all the information about the item we just pushed. Then all I have to do is to grab the data and push them to our current list of tasks. Also, I will need to emit the changes to the server so the server can update it for every other devices that currently logged in with our account. 
+I'm going to to write a function called ```addItem```. The function is responsible for pushing new tasks to the database. When the database receive the requests, if it successfully saves them to the database, it will return the message ```Success``` and also all the information about the item we just pushed. Then all I have to do is to grab the data and push them to our current list of tasks. Also, I will need to emit the changes to the server so the server can update it for every other devices that currently logged in with our account. 
 
 ```js
  addItem() {
