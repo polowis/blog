@@ -178,3 +178,55 @@ And on the client side, when a user loads the page, the user will be forced to j
     },
 ```
 
+## Axios
+The most common way for client side to communicate with server side is through the HTTP protocol. I'm quite familiar with the Fetch API and the ```XMLHttpRequest``` interface ( allow you to fetch resources and make HTTP requests). In jQuery, there is a popular function called ```$.ajax()```, but as we move away from using jQuery, [Axios](https://github.com/axios/axios) provides better way of dealing with HTTP requests. 
+
+### Axios's Features include
+
+From Axios's github repository, its features include:
+
+- Make XMLHttpRequests from the browser
+- Make http requests from node.js
+- Supports the Promise API
+- Intercept request and response
+- Transform request and response data
+- Cancel requests
+- Automatic transforms for JSON data
+- Protection against XSRF
+
+Let's take a look at how I'm going to deal with the todolist task. Everytime I make a new task, I want to push the changes to the database without refreshing the webpage but also update the current list of tasks with the data from the database. 
+
+I'm going to to write a function called ```addItem```. The function is responsible for push new task to the database. When the database receive the requests, if it successfully saves them to the database, it will return the message ```Success``` and also all the information about the item we just pushed. Then all I have to do is to grab the data and push them to our current list of tasks. Also, I will need to emit the changes to the server so the server can update it for every other devices that currently logged in with our account. 
+
+```js
+ addItem() {
+        
+        axios.post('/api/create', {title: this.title, description: this.description, progress: this.progress}).then(response => {
+           if(response.data.message == 'Success'){
+            this.task.push({
+              id: response.data.id,
+              title: response.data.title,
+              description: response.data.description,
+              done: response.data.done,
+              progress: response.data.progress,
+            })
+            this.title = ""
+            this.description = ""
+            socket.emit('update list', {task: this.task, room: this.room})
+        }}).then((res) =>{
+        }).catch(error =>{
+                
+          });
+       
+      },
+```
+
+Here is also another function that receive the data sent from the server
+```js
+fetchItemList() {
+        axios.get('/api/todolist/'+ this.user.user_id).then(response => {
+          this.task = response.data;
+         
+        });
+      },
+```
