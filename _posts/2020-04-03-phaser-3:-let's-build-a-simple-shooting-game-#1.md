@@ -47,6 +47,14 @@ But for now we will stick with the NPM. And also you should take a look at Phase
 
 ## Sprites and game loop
 
+Here is the overview of how Phaser works
+<img src="https://leanpub.com/site_images/html5shootemupinanafternoon/game_loop.png"/>
+
+1. **Preload** - The game begins with preload function to load all assets. Without this function, the game will just be stuck in the middle because it has nothing to load.
+2. **Create** -  This is where we set up the game. It is only run once to create the game
+3. **Update** - This is our main function. What happens in your game are done here. This is also where you will spend most of your time in. Some examples are checking collision, scoring, moving objects, etc.
+
+4. **Render** - This is where the game renders stuff. But usually you don't have to touch this. You can use update function because Phaser automatically renders everything.
 
 ### Preload
 We will definitely need sprites, sprites are game objects, they are something that we can see it visually. In Phaser, before you can use any assets/images, you must load them in preload function. Why? Because if you have a bunch of assets (sounds/images/plugins etc.), it will take time for all of them to be loaded in game. And the ```preload()``` function will make a huge different. You don't really have to worry about how the function works under the hood, once you declare it, it will be automatically run by Phaser.
@@ -110,8 +118,9 @@ Okay but we will have another big problem. Even the image is scaled, the hitbox 
 ```js
 this.setSize(size, size)
 ```
-The ```setSize()``` function accepts 2 parameters. This function does not change the display of the image but rather the internal size of the image which is used for physical stuff such as collision. In other words, we want to use this function to fit our scaled image. 
+The ```setSize()``` function accepts 2 parameters , width and height. This function does not change the display of the image but rather the internal size of the image which is used for physical stuff such as collision. In other words, we want to use this function to make the hitbox fit our scaled image. 
 
 <img src="https://polowishome.files.wordpress.com/2020/04/screen-shot-2020-04-04-at-12.17.25-pm.png">
 
 Now we can see that the pink squared is inside our bullet image. Indeed you can make it larger to wrap around the bullet.  
+
