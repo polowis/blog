@@ -51,7 +51,9 @@ Here is the overview of how Phaser works
 <img src="https://leanpub.com/site_images/html5shootemupinanafternoon/game_loop.png"/>
 
 1. **Preload** - The game begins with preload function to load all assets. Without this function, the game will just be stuck in the middle because it has nothing to load.
+
 2. **Create** -  This is where we set up the game. It is only run once to create the game
+
 3. **Update** - This is our main function. What happens in your game are done here. This is also where you will spend most of your time in. Some examples are checking collision, scoring, moving objects, etc.
 
 4. **Render** - This is where the game renders stuff. But usually you don't have to touch this. You can use update function because Phaser automatically renders everything.
@@ -116,7 +118,7 @@ Okay but we will have another big problem. Even the image is scaled, the hitbox 
 
 
 ```js
-this.setSize(size, size)
+this.bullet.setSize(size, size)
 ```
 The ```setSize()``` function accepts 2 parameters , width and height. This function does not change the display of the image but rather the internal size of the image which is used for physical stuff such as collision. In other words, we want to use this function to make the hitbox fit our scaled image. 
 
@@ -124,3 +126,12 @@ The ```setSize()``` function accepts 2 parameters , width and height. This funct
 
 Now we can see that the pink squared is inside our bullet image. Indeed you can make it larger to wrap around the bullet.  
 
+# Move the bullet
+
+Now, hope you get the idea of how Phaser works behind the scenes. To move our bullet vertically, we can just simply reduce its y-coordinates in the ```update``` function
+
+```js
+update(){
+    this.bullet.y -= 200
+}
+```
