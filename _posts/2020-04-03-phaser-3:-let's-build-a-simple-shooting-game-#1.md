@@ -36,7 +36,7 @@ I'm going to use Phaser 3 for now. Phaser 3 offers more feature than Phaser 2, d
 
 You will definitely need a browser, a web server and a text editor (**not notepad**). You have to use a web server in order to run your game. In the docs, [Phaser](http://www.phaser.io/tutorials/getting-started/index) already explained why you need a web server. 
 
-About text editor, you can use any editor you like (**Again not notepad**). If you don't know which to choose, I suggest you to use Sublime Text or VSCode. VSCode has an extension that allows you to run web server which is pretty handy.
+About text editor, you can use any editor you like (**Again not notepad**). If you don't know which one to choose, I suggest you to use Sublime Text or VSCode. VSCode has an extension that allows you to run web server which is pretty handy.
 
 What are we missing??
 Yes, the Phaser framework. There are two ways you can download Phaser, either via npm or cdn. [Phaser](https://phaser.io/download/stable) has a well written download tutorial if you want to take a look at.
