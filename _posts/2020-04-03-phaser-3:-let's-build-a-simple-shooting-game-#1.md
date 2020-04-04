@@ -89,3 +89,29 @@ You probably learn about the cartesian plane where you need to define a value pa
 
 Sadly, computers don't use cartesian plane. Instead the point ```(0, 0)``` being placed on the center, it represents at the top-left at the screen. And instead of decreasing, the y value increases as you down. The x stays the same. 
 
+## Size of sprite
+
+I know lots of people might experience this issue. Sometimes, the image is too big or it might be too small. There are some functions that let you resize the image/sprite to fit your game style. 
+
+```js
+this.bullet.setScale(valueX, valueY) 
+this.bullet.scale = valueForBothXAndY
+this.bullet.scaleX = valueX
+this.bullet.scaleY = valueY
+```
+
+These above function do the same jobs. Usually, the scale value is below 1 if you want the image to be small. 1 is default value. If you want the image to be large, use a higher number. Usually you will want to set both scaleX and scaleY to the same value otherwise, one side will look big than the other. 
+
+<img src="https://polowishome.files.wordpress.com/2020/04/screen-shot-2020-04-04-at-12.13.57-pm.png"/>
+
+Okay but we will have another big problem. Even the image is scaled, the hitbox of the bullet remains the same (**The pink squared box is the hitbox of the bullet**). It does not change regarless of the scale function. What can we do?
+
+
+```js
+this.setSize(size, size)
+```
+The ```setSize()``` function accepts 2 parameters. This function does not change the display of the image but rather the internal size of the image which is used for physical stuff such as collision. In other words, we want to use this function to fit our scaled image. 
+
+<img src="https://polowishome.files.wordpress.com/2020/04/screen-shot-2020-04-04-at-12.17.25-pm.png">
+
+Now we can see that the pink squared is inside our bullet image. Indeed you can make it larger to wrap around the bullet.  
