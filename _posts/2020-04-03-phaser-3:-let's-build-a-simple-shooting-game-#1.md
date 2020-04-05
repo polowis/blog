@@ -3,7 +3,7 @@ date: 2020-04-03 23:31:59
 layout: post
 title: "Phaser 3: Let's build a simple shooting game #1"
 subtitle:
-description:
+description: Learn to build simple game with Phaser 3
 image: https://upload.wikimedia.org/wikipedia/commons/6/6c/Phaser_%28game_framework%29_logo.png
 optimized_image:
 category: code
