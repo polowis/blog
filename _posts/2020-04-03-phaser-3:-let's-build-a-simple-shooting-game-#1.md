@@ -41,7 +41,7 @@ About text editor, you can use any editor you like (**Again not notepad**). If y
 What are we missing??
 Yes, the Phaser framework. There are two ways you can download Phaser, either via npm or cdn. [Phaser](https://phaser.io/download/stable) has a well written download tutorial if you want to take a look at.
 
-But for now we will stick with the NPM. And also you should take a look at Phaser [tutorial](https://phaser.io/tutorials/getting-started-phaser3) to get an idea of  its struture. 
+And also you should take a look at Phaser [tutorial](https://phaser.io/tutorials/getting-started-phaser3) to get an idea of  its struture. 
 
 # Part 1
 
