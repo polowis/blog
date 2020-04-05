@@ -65,8 +65,8 @@ You need to have a background image, it can be whatever you like and a bullet im
 
 ```js
 preload() {
-    this.load.image('space', 'assets/space.png')
-    this.load.image('bullet', 'assets/bullet.png')
+    this.load.image('space', 'assets/space.png');
+    this.load.image('bullet', 'assets/bullet.png');
 }
 ```
 
@@ -87,8 +87,9 @@ Now we need to display the images that we just loaded from preload function. In 
 
 ```js
 create(){
-    this.space = this.add.tileSprite(600, 300, 'space');
-    this.bullet = this.add.sprite(400, 300, 'bullet')
+    this.space = this.add.image(600, 300, 'space');
+    this.bullet = this.add.sprite(400, 300, 'bullet');
+    // add more sprite here if you want
 }
 ```
 The function ```add.sprite()``` takes 3 parameters, the x and y coordinates of the sprite and the given image name that we previously declared in ```preload()``` function. 
@@ -126,12 +127,71 @@ The ```setSize()``` function accepts 2 parameters , width and height. This funct
 
 Now we can see that the pink squared is inside our bullet image. Indeed you can make it larger to wrap around the bullet.  
 
-# Move the bullet
+## Move the bullet
 
 Now, hope you get the idea of how Phaser works behind the scenes. To move our bullet vertically, we can just simply reduce its y-coordinates in the ```update``` function
 
 ```js
 update(){
-    this.bullet.y -= 200
+    this.bullet.y -= 200;
 }
 ```
+## Physics
+
+Phaser comes with ```Arcade``` physics system that handles most of the calculations for us.
+
+### Velocity
+
+After adding the bullet sprite, we can simply set its velocity and Phaser will handle the rest of the calculations for us. 
+
+```js
+create(){
+    this.bullet = this.physics.add.sprite(400, 300, 'bullet');
+    this.bullet.body.velocity.y -= 200;
+}
+update(){
+}
+```
+We need to enable physics so our sprite can understand what velocity is. Simply just change the function to ```physics.add.sprite()``` instead of ```add.sprite()```. Then we will need to change its y-velocity, how fast it moves vertically ``` this.bullet.body.velocity.y -= 200```, in other words, the bullet will move 200 pixels per second upward. 
+
+### Collision
+In our ```update()``` function, we need to tell the computer to know when the bullet collides with the enemy. Luckily, Phaser comes with a very handy function. This
+
+```js
+update() {
+    this.physics.overlap(this.bullet, this.enemy, this.hitEnemy, null, this);
+}
+```
+The overlap function needs a callback function to be called when the objects overlap. Which means, you can add a function to do something upon collision. Here's an example:
+
+```js
+hitEnemy() {
+    this.enemy.destroy()
+    this.bullet.destroy()
+}
+```
+Phaser provides us with a ```destroy()``` function to kill the sprite. Which means, after calling the function, the sprite will be marked as dead and invisible
+
+## Debugging
+
+If you want to see object's hitbox, or the direction the object is moving, in your game configuration, under ```physics``` property, add the following line of code to enable debug mode.
+
+```js
+const config = {
+    type: Phaser.AUTO,
+    parent: 'phaser-example',
+    width: 1280,
+    height: 700,
+    physics: {
+      default: 'arcade',
+      // Code starts here
+      arcade: {
+        debug: true,
+        }  
+    },
+    
+  }
+```
+If you're done with testing, you should disable debug mode.
+
+<i style="background-color:lightgreen;">Sometimes, you need to cheat or copy the code. The code I provided to you are just for preferences, If I put the full code here, I know lots of people will just blindly copy and paste them but what I show here is something that you will need in order to build a simple game</i>
