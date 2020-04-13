@@ -4,7 +4,7 @@ layout: post
 title: "Memoization - Improve code performance"
 subtitle:
 description: Speed up your program with Memoization
-image: https://enmascript.com/images/2019-04-20-memoizing-explained.png
+image: https://www.wisdomgeek.com/wp-content/uploads/2019/10/rest-and-spread-javascript-1280x720.png
 optimized_image:
 category: code
 tags:
