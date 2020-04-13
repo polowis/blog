@@ -151,6 +151,4 @@ When we press the key, we set the velocity to ```200`` but what happens when we 
     } 
 ```
 
-## Touch movement
-
-Due to the fact that the y-values of the screen coordinates are flipped
+Now if you use your arrow keys, you should be able to see the player move up and down or left and right. 
