@@ -20,7 +20,7 @@ Have you ever heard of the term **Memcached** or **Memoization** before? If you 
 
 Sometimes when you build the project, have you ever noticed that somewhere in your code runs really slow, even though the data already exists. Or you may even heard from someone complaining the same thing! Given example of user account, once the data has been taken by the user from the database, we should not retrieve it again. Unless the data is updated, else just let the user use the cached data.
 
-Usually, the people who work in software development industry can understand the term **Memoization**, but front-end developers most likely do not understand how it works. In short, **Memoization** is an optimization technique that used to speed up computer programs by storing information in cache, it will return the cached results when the same computation is executed. 
+Usually, the people who work in software development industry can understand the term **Memoization**, but front-end developers most likely do not understand how it works. In short, **Memoization** is an optimization technique that used to speed up computer programs by storing information in cache, it will return the cached results when the same computation is needed. 
 
 ## Example
 
@@ -56,7 +56,7 @@ console.timeEnd('Run second time');
 //Run second time: 15.080078125ms
 ```
 
-Depend on your PC, you might have different number. But let's take a closer approach, there is a clear evidence that we call the fibonacci function 2 times, with the same number, even when two results are the same, we still need to wait for another 15s to get the same result. Hopefully by now, you get how **Memoization** is important. Let's modify the code a little bit.
+Depend on your PC, you might have different number. But let's take a closer approach, there is a clear evidence that we call the fibonacci function 2 times, with the same number, even when two results are the same, we still need to wait for another 15ms to get the same result. Hopefully by now, you get how **Memoization** is important. Let's modify the code a little bit.
 
 ## Memoization function
 
