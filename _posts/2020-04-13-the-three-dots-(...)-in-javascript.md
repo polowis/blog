@@ -1,7 +1,7 @@
 ---
 date: 2020-04-13 06:54:21
 layout: post
-title: "The three dots (...) in JavaScript"
+title: "The three dots in JavaScript"
 subtitle:
 description: The three dots (...) syntax in JavaScript
 image: https://www.wisdomgeek.com/wp-content/uploads/2019/10/rest-and-spread-javascript-1280x720.png
