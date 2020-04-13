@@ -92,7 +92,7 @@ console.timeEnd('Run third time');
 
 //Run first time: 13.579ms
 //Run second time: 0.013ms
-//Run third time: 0.0005ms
+//Run third time: 0.005ms
 ```
 
 If you look at the result, the first time return the same execution time. But for the second time, it is much faster compared to the first one. Through this technique, you can clearly see that there is a huge performance improvement, and that's why some website loads really fast but some go really slow.
