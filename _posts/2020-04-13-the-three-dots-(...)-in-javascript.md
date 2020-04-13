@@ -4,7 +4,7 @@ layout: post
 title: "The three dots (...) in JavaScript"
 subtitle:
 description:
-image: https://miro.medium.com/fit/c/1838/551/0*Vbp13RW_9HpRqH6E.png
+image: https://www.wisdomgeek.com/wp-content/uploads/2019/10/rest-and-spread-javascript-1280x720.png
 optimized_image:
 category:
 tags:
