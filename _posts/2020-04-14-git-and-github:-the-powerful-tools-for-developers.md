@@ -99,7 +99,7 @@ To gain a deeper understanding of using Git, you may use these links
 
 By now you should be able to guess that Git and Github are relevant to each other. As explained above, team members of a project can pull and watch changes in code via a remote repository stored on a separate server. [Github](https://github.com) is a place that store Git repos. 
 
-Additionally, Github is also a place for you to improve your skills. Github is one of the most popular services for hosting open source projects. Other people can contribute to these projects through the use of Git and Github. If you are not able to contribute to the project, you can also learn from other developers by tracking thier commits. You can see how other people write code and maybe learn from it. 
+Additionally, Github is also a place for you to improve your skills. Github is one of the most popular services for hosting open source projects. Other people can contribute to these projects through the use of Git and Github. If you are not able to contribute to the project, you can also learn from other developers by tracking their commits. You can see how other people write code and maybe learn from it. 
 
 Github is also a great place to impress other people. You can host your own personal projects, through this, people can have a clearer picture of your ability. Github activity history shows a lot about that programmer, such as the technologies used, the ability to collaborate with other developers, the ability to manage projects, etc.
 
