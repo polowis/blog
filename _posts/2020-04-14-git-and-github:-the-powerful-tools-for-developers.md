@@ -90,9 +90,9 @@ Avoid commits changes that are not neccessary and should be ignored. For example
 #### Learn more about Git
 To gain a deeper understanding of using Git, you may use these links
 
-1. Official git documentation: https://git-scm.com/doc
-2. Learn how to use git: https://www.edureka.co/blog/git-tutorial
-3. Git official page: https://git-scm.com
+1. Official git documentation: <https://git-scm.com/doc>
+2. Learn how to use git: <https://www.edureka.co/blog/git-tutorial>
+3. Git official page: <https://git-scm.com>
 
 
 ### Github
