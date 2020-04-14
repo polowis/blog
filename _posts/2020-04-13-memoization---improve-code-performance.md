@@ -56,7 +56,7 @@ console.timeEnd('Run second time');
 //Run second time: 15.080078125ms
 ```
 
-Depend on your PC, you might have different number. But let's take a closer approach, there is a clear evidence that we call the fibonacci function 2 times, with the same number, even when two results are the same, we still need to wait for another 15ms to get the same result. Hopefully by now, you get how **Memoization** is important. Let's modify the code a little bit.
+Depend on your PC, you might have different number. But let's take a closer approach, there is a clear evidence that we call the fibonacci function 2 times, with the same number, even when two results are the same, we still need to wait for another 15ms to get the same result. And this is when **Memoization** comes to play. Hopefully by now, you get how **Memoization** is important. Let's modify the code a little bit.
 
 ## Memoization function
 
