@@ -6,7 +6,7 @@ subtitle:
 description: The three dots (...) syntax in JavaScript
 image: https://www.wisdomgeek.com/wp-content/uploads/2019/10/rest-and-spread-javascript-1280x720.png
 optimized_image:
-category:
+category: code
 tags:
     - programming
     - javascript
