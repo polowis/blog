@@ -54,7 +54,7 @@ This layer has 2 main protocols: TCP (Transmission Control Protocol) and UDP (Us
 
 TCP will ensure the quality of packet transmission, it will make sure that the packet arrives at the destination without any errors or else it will be retransmitted. However, it takes a long time to fully check information from the data and control network congestion.
 
-Contrary to TCP, UDP sees a faster transfer speed but does not guarantee the quality of data sent (ie it does not care whether the data reaches the destination or not).
+Contrary to TCP, UDP has a faster transfer speed but does not guarantee the quality of data sent (it does not care whether the data reaches the destination or not).
 
 #### Internet 
 
