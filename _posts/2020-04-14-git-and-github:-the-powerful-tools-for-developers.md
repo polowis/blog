@@ -48,9 +48,9 @@ After setting up the environment, you can start working with Git. The local repo
 
 
 
-Every changes such as add / edit/ delete will need to be performed on the working directory. When you want to save these changes, simple use ```git add``` command to add them from working directory to a staging area. Then use ```git commit``` command to save from the staging area to the local repository. 
+Every changes such as add / edit/ delete will need to be performed on the working directory. When you want to save these changes, simply use ```git add``` command to add them from working directory to a staging area. Then use ```git commit``` command to save from the staging area to the local repository. 
 
-The staging area is where you prepare changes before they are committed. The staging are is incredibly helpful. It let you review the changes, review complex commits. For example, you want to make the changes in ```a.js```, ```b.js```, ```c.js```. To add all changes to staging area you can use ```git add .``` command. However, the changes in ```b.js``` file may not relevant to the other two files. So you will need to seprate them into several commits. To do that, first add file ```a``` and ```c``` to the staging area. 
+The staging area is where you prepare changes before they are committed. The staging area is incredibly helpful. It let you review the changes, review complex commits. For example, you want to make the changes in ```a.js```, ```b.js```, ```c.js```. To add all changes to staging area you can use ```git add .``` command. However, the changes in ```b.js``` file may not relevant to the other two files. So you will need to seprate them into several commits. To do that, first add file ```a``` and ```c``` to the staging area. 
 
 ```bash
 $ git add a.js
