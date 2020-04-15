@@ -185,6 +185,7 @@ console.log(minage(getGirls(friends))) // 9
 
 The result of two answers are exactly the same. Through these two methods, what do you think you can do? That's the difference between without higher-order functions and higher-order functions. By now, do you have any idea what higher-order functions are?
 
+
 ### What are Higher-order functions?
 Higher-order functions are functions that take other functions as arguments or return functions as their results. Taking another function as an argument is often called the callback function, because of this, it is called Higher-order functions. This is a concept that Javascript uses a lot.
 

@@ -24,7 +24,7 @@ paginate: false
 
 This post does not show you how to write clean code but rather shows you some example between good code and bad code and maybe you can improve by yourself.
 
-What is clean code **clean code**? Clean code  is the code that everyone can understand, easy to read and maintainable. You might think that's easy, I can do that! But have you ever tried to look at a piece of code in your previous projects? Is it expressive enough for you to be able to understand within a couple of minutes? No? Then your code is not really considered to be clean enough. 
+What is **clean code**? Clean code  is the code that everyone can understand, easy to read and maintainable. You might think that's easy, I can do that! But have you ever tried to look at a piece of code in your previous projects? Is it expressive enough for you to be able to understand within a couple of minutes? No? Then your code is not really considered to be clean enough. 
 
 The code you write will never be perfect but that's fine. Writing a good piece of code is hard, and you must practice and watch others fail and learn from their mistakes. A programmer who writes clean code is an artist who can paint a picture. When you look at the picture, you know whether if it looks good or not but by recognising good art does not mean you know how to paint. Same goes for clean code, being able to recognise good code does not mean you know how to write it. 
 
@@ -41,7 +41,7 @@ Poorly written code may be fast but in short term, a few months later you will b
 
 ## If clean code such a good practice, why developers don't do it?
 
-There are plenty of reasons why most developers code are not clean enough. Such as: some developers think they are professional, some have no idea how to code and some just care about the functional of the software. In fact, it's true, customers they don't care about how you write code, what lanuage or what library you're using but I'm going to talk about this later. 
+There are plenty of reasons why most developers code are not clean enough. Such as: some developers think they are professional, some have no idea how to code and some just care about the functional of the software. In fact, it's true, customers they don't care about how you write code, what language or what library you're using but I'm going to talk about this later. 
 
 Junior developer, for instance, they've only worked on their own projects or small projects and because of that reason, most of them never understand why is it neccessary to write readable code. Another major problem is lack of time. As mentioned earlier, writing bad code takes less time than writing clean code. Because clean takes a lot of time and planning, and when developers face deadlines, writing bad code is the only option. 
 
