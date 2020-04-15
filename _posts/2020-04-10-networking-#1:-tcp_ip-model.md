@@ -3,7 +3,7 @@ date: 2020-04-10 04:52:55
 layout: post
 title: "Networking #1: TCP/IP model"
 subtitle:
-description:
+description: Have you ever wondered how the Internet works?
 image: https://s8182.pcdn.co/wp-content/uploads/2014/06/063014_1912_TCPIPANDTHE2.jpg
 optimized_image:
 category: blog
