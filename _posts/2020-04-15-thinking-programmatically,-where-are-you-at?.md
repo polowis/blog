@@ -3,7 +3,7 @@ date: 2020-04-15 00:42:00
 layout: post
 title: "Thinking programmatically, where are you at?"
 subtitle:
-description: Programming is a broad concept for everyone who follows the programming path. And that includes programmatically thinking, that's why employers often value candidates' ability to think.
+description: Programming is a broad concept for everyone who follows the programming path. And that includes programmatically thinking
 image: https://papan01.com/static/8ebcd278e5c91de55c2aeae709ff056d/944c5/you-dont-know-js.png
 optimized_image:
 category: code
