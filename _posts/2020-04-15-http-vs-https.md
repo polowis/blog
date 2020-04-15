@@ -60,7 +60,7 @@ The most important difference between the two protocols is the SSL certificate. 
 4. Configure any internal hard links in your site, from HTTP to HTTPS.
 5. Update your code libraries, such as JavaScript, Ajax or any third party plugins.
 6. Redirect any external links you control to HTTPS, such as directory listings.
-7. Update the [htaccess](https://httpd.apache.org/docs/current/howto/htaccess.html), such as Apache Web Server, [LiteSpeed](https://www.litespeedtech.com/), [Nginx](http://nginx.org/en/docs/beginners_guide.html) Config and your internet service management function (such as Windows Web Server), to redirect from HTTP to HTTPS.
+7. Update the [htaccess](https://httpd.apache.org/docs/current/howto/htaccess.html), such as Apache Web Server, [LiteSpeed](https://www.litespeedtech.com/), [Nginx](http://nginx.org/en/docs/beginners_guide.html) Configurate your internet service management function (such as Windows Web Server), to redirect from HTTP to HTTPS.
 8. If you are using a [CDN](https://en.wikipedia.org/wiki/Content_delivery_network), update the SSL settings of the CDN.
 9. Implement 301 redirects on each page.
 10. Update any links you use in marketing automation tools, such as email links.
