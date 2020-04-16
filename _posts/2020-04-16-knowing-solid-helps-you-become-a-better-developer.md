@@ -36,7 +36,7 @@ SOLID principles can be break down into 5 different principle:
 ### Single responsibility
 
 <div style="background-color:lightgreen;">
-<i >A class should have one, and only one, reason to change<i>
+<i>A class should have one, and only one, reason to change</i>
 </div>
 
 Think about this case, let's say you have a class look like this
