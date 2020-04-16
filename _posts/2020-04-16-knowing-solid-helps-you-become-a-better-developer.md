@@ -36,7 +36,7 @@ SOLID principles can be break down into 5 different principle:
 ### Single responsibility
 
 <div style="background-color:lightgreen;">
-<i>A class should have one, and only one, reason to change</i>
+<i style="font-size: 20px;">A class should have one, and only one, reason to change</i>
 </div>
 
 Think about this case, let's say you have a class look like this
@@ -67,7 +67,7 @@ public class Circle{
 ### Open-Close
 
 <div style="background-color:lightgreen;">
-<i >You should be able to extend a class's behaviour, without modifying it.</i>
+<i style="font-size: 20px;">You should be able to extend a class's behaviour, without modifying it.</i>
 </div>
 
 In this principle, the class's behaviour should be able to be extended. Why? Because when there are requirements changes, you should be able to change the way of how the class behave in a different way in order to meet thoese requirements. 
@@ -90,7 +90,7 @@ public class Square extends Shape{
 
 
 <div style="background-color:lightgreen;">
-<i >Derived classes must be substitutable for their base classes</i>
+<i style="font-size: 20px;">Derived classes must be substitutable for their base classes</i>
 </div>
 
 Okay, things are getting complicated. Let me give you an explanation through examples, let say you have the parent class called **Shape** and the following child classes **Square**, **Circle**, **Rectangle**. Okay, if you inherit class **Shape**, the **Square** and **Rectangle** should be able to run smoothly. Mathematically saying, the area of square and rectangle needs the width and height. But class **Circle** may not be able to run smoothly, because the area of circle doesn't need those factors and will cause errors. 
@@ -110,8 +110,8 @@ This principle is quite easy to understand. It is better to have many smaller in
 ### Dependency inversion
 
 <div style="background-color:lightgreen;">
-<i>High level modules should not depend upon low level modules. Both should depend upon abstraction</i>
-<i>Abstractions should not depend upon details. Details should depend upon abstractions </i>
+<i style="font-size: 20px;">High level modules should not depend upon low level modules. Both should depend upon abstraction</i> <br>
+<i style="font-size: 20px;">Abstractions should not depend upon details. Details should depend upon abstractions </i>
 </div>
 
 This principle is quite important, often can be solved by using **dependency injection**. Dependency injection technique is injecting dependency of a class through constructor. 
