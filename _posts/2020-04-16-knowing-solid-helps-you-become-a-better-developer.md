@@ -70,7 +70,7 @@ public class Circle{
 <i style="font-size: 20px; background-color:lightgreen;">You should be able to extend a class's behaviour, without modifying it.</i>
 
 
-In this principle, the class's behaviour should be able to be extended. Why? Because when there are requirements changes, you should be able to change the way of how the class behave in a different way in order to meet thoese requirements. 
+In this principle, the class's behaviour should be able to be extended. Why? Because when there are requirements changes, you should be able to change the way of how the class behave in a different way in order to meet those requirements. 
 
 But also, closed for modifications. No one is allowed to make changes to the original class. The best way to achieve this is through inheritance and abstraction. In this way you would be able to change the behaviour of the class without modifying the class base. For instance, given the above example:
 
