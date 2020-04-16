@@ -127,7 +127,7 @@ public class Animal{
 **With dependency injection**
 ```java
 public class Animal{
-    public Head Head;
+    public Head head;
     public Tail tail;
 
     public Animal(Head head, Tail tail) {
