@@ -35,9 +35,9 @@ SOLID principles can be break down into 5 different principle:
 
 ### Single responsibility
 
-<div style="background-color:lightgreen;">
-<i style="font-size: 20px;">A class should have one, and only one, reason to change</i>
-</div>
+
+<i style="font-size: 20px; background-color:lightgreen;" >A class should have one, and only one, reason to change</i>
+
 
 Think about this case, let's say you have a class look like this
 
@@ -66,9 +66,9 @@ public class Circle{
 
 ### Open-Close
 
-<div style="background-color:lightgreen;">
-<i style="font-size: 20px;">You should be able to extend a class's behaviour, without modifying it.</i>
-</div>
+
+<i style="font-size: 20px; background-color:lightgreen;">You should be able to extend a class's behaviour, without modifying it.</i>
+
 
 In this principle, the class's behaviour should be able to be extended. Why? Because when there are requirements changes, you should be able to change the way of how the class behave in a different way in order to meet thoese requirements. 
 
@@ -89,9 +89,9 @@ public class Square extends Shape{
 ### Liskov substitution 
 
 
-<div style="background-color:lightgreen;">
-<i style="font-size: 20px;">Derived classes must be substitutable for their base classes</i>
-</div>
+
+<i style="font-size: 20px; background-color:lightgreen;">Derived classes must be substitutable for their base classes</i>
+
 
 Okay, things are getting complicated. Let me give you an explanation through examples, let say you have the parent class called **Shape** and the following child classes **Square**, **Circle**, **Rectangle**. Okay, if you inherit class **Shape**, the **Square** and **Rectangle** should be able to run smoothly. Mathematically saying, the area of square and rectangle needs the width and height. But class **Circle** may not be able to run smoothly, because the area of circle doesn't need those factors and will cause errors. 
 
@@ -101,18 +101,18 @@ As suggested, each method should have preconditions and postconditions. The prec
 
 ### Interface segregation
 
-<div style="background-color:lightgreen;">
-<i >Clients should not be forced to implement interface they do not use.</i>
-</div>
+
+<i style="background-color:lightgreen;">Clients should not be forced to implement interface they do not use.</i>
+
 
 This principle is quite easy to understand. It is better to have many smaller interfaces. Instead of making an interface with 100 methods, you should break it down to several interface. Because you don't even use all of those. For example, let's say you have an interface called **Animal**, and it has **walk**, **eat** methods. However some animals can fly as well, which means you will need to break it down by **role**, for example, you might want to break it down into **CanFly** interface, responsible for animals that can fly. Through that, the code will become more maintainable and readable. 
 
 ### Dependency inversion
 
-<div style="background-color:lightgreen;">
-<i style="font-size: 20px;">High level modules should not depend upon low level modules. Both should depend upon abstraction</i> <br>
-<i style="font-size: 20px;">Abstractions should not depend upon details. Details should depend upon abstractions </i>
-</div>
+
+<i style="background-color:lightgreen;">High level modules should not depend upon low level modules. Both should depend upon abstraction</i> <br><br>
+<i style="background-color:lightgreen;">Abstractions should not depend upon details. Details should depend upon abstractions </i>
+
 
 This principle is quite important, often can be solved by using **dependency injection**. Dependency injection technique is injecting dependency of a class through constructor. 
 
