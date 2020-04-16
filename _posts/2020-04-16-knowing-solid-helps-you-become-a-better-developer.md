@@ -105,7 +105,33 @@ As suggested, each method should have preconditions and postconditions. The prec
 <i style="background-color:lightgreen;">Clients should not be forced to implement interface they do not use.</i>
 
 
-This principle is quite easy to understand. It is better to have many smaller interfaces. Instead of making an interface with 100 methods, you should break it down to several interface. Because you don't even use all of those. For example, let's say you have an interface called **Animal**, and it has **walk**, **eat** methods. However some animals can fly as well, which means you will need to break it down by **role**, for example, you might want to break it down into **CanFly** interface, responsible for animals that can fly. Through that, the code will become more maintainable and readable. 
+This principle is quite easy to understand. It is better to have many smaller interfaces. Instead of making an interface with 100 methods, you should break it down to several interface. Similar to Single responsibility. Because you don't even use all of those. For example, let's say you have an interface called **Animal**, and it has **walk**, **eat** methods. However some animals can fly as well, which means you will need to break it down by **role**, for example, you might want to break it down into **CanFly** interface, responsible for animals that can fly. Through that, the code will become more maintainable and readable. 
+
+```java
+interface Animal{
+    public void walk();
+    public void sleep();
+}
+public class Dog extends Animal{
+    public void walk(){
+
+    }
+
+    public void sleep(){
+
+    }
+}
+
+public class Bird extends Animal{
+    public void walk(){
+        // No need 
+    }
+    public void sleep(){
+
+    }
+}
+
+```
 
 ### Dependency inversion
 
