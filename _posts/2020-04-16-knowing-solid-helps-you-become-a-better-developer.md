@@ -51,7 +51,7 @@ public class Shape{
 
 What have you noticed in the above example? The class ```Shape``` is responsible for 3 different things. In the future, when the requirements change, the class will need to be modified. The  more responsibility of a class, the more changes request it will get, eventually it will make those changes harder to implement because you need to modify the class. 
 
-Instead you should seprate them into several small classes. For example, the changes might be made like this:
+Instead you should separate them into several small classes. For example, the changes might be made like this:
 
 ```java
 public class Square{
@@ -112,7 +112,7 @@ interface Animal{
     public void walk();
     public void sleep();
 }
-public class Dog extends Animal{
+public class Dog implements Animal{
     public void walk(){
 
     }
@@ -122,7 +122,7 @@ public class Dog extends Animal{
     }
 }
 
-public class Bird extends Animal{
+public class Bird implements Animal{
     public void walk(){
         // No need 
     }
