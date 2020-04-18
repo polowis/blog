@@ -75,7 +75,7 @@ In this principle, the class's behaviour should be able to be extended. Why? Bec
 But also, closed for modifications. No one is allowed to make changes to the original class. The best way to achieve this is through inheritance and abstraction. In this way you would be able to change the behaviour of the class without modifying the class base. For instance, given the above example:
 
 ```java
-public class Shape{
+public abstract class Shape{
     public abstract int calculateArea();
 }
 
