@@ -62,7 +62,9 @@ power()
 NaN here means: Not a number. If we don't pass any arguments, the function will return ```undefined```. And this is why we need default parameters.
 
 ### Default parameters
+
 Before the birth of ES6, developers typically check like this
+
 ```js
 function power(x){
     if(typeof x === 'undefined') {
