@@ -54,7 +54,7 @@ dataset.describe()
 ```
 You will be able to see something like this
 
-<img src="/assets/images/uploads/linear2.png">
+<img src="/assets/img/uploads/linear2.png">
 
 Finally, you might want to to plot your data using ```matplotlib``` so you can find the relationship between data points
 
@@ -68,7 +68,7 @@ plt.show()
 
 The result will be displayed like this:
 
-<img src="assets/images/uploads/linear3.png">
+<img src="assets/img/uploads/linear3.png">
 
 
 Our next step is to divide the data into “attributes” and “labels”. 
@@ -105,7 +105,7 @@ df = pd.DataFrame({'Actual': y_test, 'Predicted': y_pred})
 print(df)
 ```
 
-<img src="assets/images/uploads/linear4.png">
+<img src="assets/img/uploads/linear4.png">
 
 And, finally, plot our straight line
 
