@@ -68,7 +68,7 @@ plt.show()
 
 The result will be displayed like this:
 
-<img src="assets/img/uploads/linear3.png">
+<img src="/assets/img/uploads/linear3.png">
 
 
 Our next step is to divide the data into “attributes” and “labels”. 
@@ -105,7 +105,7 @@ df = pd.DataFrame({'Actual': y_test, 'Predicted': y_pred})
 print(df)
 ```
 
-<img src="assets/img/uploads/linear4.png">
+<img src="/assets/img/uploads/linear4.png">
 
 And, finally, plot our straight line
 
@@ -119,7 +119,7 @@ plt.show()
 
 ```
 
-<img src="/assets/img/uploads/linear1.png">
+<img src="/assets/img/uploads/linear5.png">
 
 ### How do we know how well the algorithm performs?
 
