@@ -74,7 +74,7 @@ function power(x){
 }
 ```
 
-We use the popular ```typeof``` function to check if x is undefined then assign it a value. But that looks really ugly, doesn't it? You have to do this for every function. But with the introduction of ES6, this is no longer a pain.
+We use the popular ```typeof``` function to check if x is undefined then assign it a value. But that looks really ugly, doesn't it? You have to do this for every function. But with the introduction of ES6, this is no longer a pain. You can set the default parameter directly in the parameters placeholder. 
 
 ``` js
 function power(x = 4) {
