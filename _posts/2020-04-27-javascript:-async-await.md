@@ -20,7 +20,7 @@ If you're not familiar with ES6, you're might not familiar with the term ```asyn
 
 1. <a href="#callback">Callback</a>
 2. <a href="#promise">Promise</a>
-3. <a href="#async-await">Async/Await</a>
+3. <a href="#asyncawait">Async/Await</a>
 
 ### Callback
 
