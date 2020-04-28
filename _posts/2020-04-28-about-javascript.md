@@ -28,7 +28,7 @@ More and more developers start using JavaScript, which increases the number of p
 
 **Data types in JavaScript, how many are there?**
 
-There are 5 data types and there are 3 ways you can declare a variable using ```const```, ```let```, and ```var```. But let's keep in simple for now. 
+There are 5 primitive types and there are 3 ways you can declare a variable using ```const```, ```let```, and ```var```. But let's keep in simple for now. 
 
 ```js
 const number = 10; // numeric
