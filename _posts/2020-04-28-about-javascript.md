@@ -145,7 +145,7 @@ What is it? This is one of the way to convert type of values in JavaScript, impl
 console.log(1 == '1');
 //output: true
 ```
-Why is this happening? A number equal a string? Before the comparasion actually happened, JavaScript performs the coercion. In other words, if two values have the same type, the just compare it but if they don't, JavaScript will try to convert them into the same types and then compare. Here the number 1 remains the same but the string ```"1"``` have been converted to the same type which is **number**. Therefore results in ```true```. Coercion does not follow any logic, it follows the rules we have to remember when apply it to many situations. I will list some example here:
+Why is this happening? A number equal a string? Before the comparasion actually happened, JavaScript performs the coercion. In other words, if two values have the same type, they just compare it but if they don't, JavaScript will try to convert them into the same types and then compare. Here the number 1 remains the same but the string ```"1"``` have been converted to the same type which is **number**. Therefore results in ```true```. Coercion does not follow any logic, it follows the rules we have to remember when apply it to many situations. I will list some example here:
 
 **Number vs String**
 
@@ -161,7 +161,7 @@ First, the boolean value is converted into number  such as ```true => 1, false =
 null == undefined
 // output: true
 ```
-Why true? It's the way how JavaScript works?
+Why true? It's the way how JavaScript works.
 
 ##### How to not get these silly errors?
 
