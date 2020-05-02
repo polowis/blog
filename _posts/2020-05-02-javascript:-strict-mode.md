@@ -1,5 +1,5 @@
 ---
-date: 2020-05-02 05:59:55
+date: 2020-05-02 06:51:00
 layout: post
 title: "JavaScript: Strict Mode"
 subtitle:
@@ -119,3 +119,31 @@ console.log(bar); // ReferenceError: bar is not defined
 As you can see, normally, if you have "forgot" (or purposely "forgot"), without using var (or let) to declare variables, your javascript code will still run normally.
 
 But with **strict mode**, you won't be able to do it. 
+
+#### Throw errors when assignments cannot be performed
+
+Normally, if an object has a property ```writable``` equals false, then of course, you will not be able to overwrite the data on that property. But the problem is that the code keeps running. In **strict mode**, an error will be thrown. Now to understand it better, let's consider the following code
+
+**Without strict mode**
+
+```js
+NaN = 1; // nothing happen
+var object = {}
+Object.defineProperty(object, 'prop', {value: 1, writable:false});
+object.prop; // => 2
+object.prop = 10;
+object.prop; // => 2
+
+```
+
+**With strict mode** 
+
+```js
+NaN = "error"; // TypeError
+var object = {};
+Object.defineProperty(object, 'prop', {value: 1, writable:false});
+object.prop; // => 2
+object.prop = 10; 
+// // Uncaught TypeError: Cannot assign to read only property 'prop' of object #<Object>
+
+```
