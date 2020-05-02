@@ -190,4 +190,3 @@ If you using it with **number** versus **number**, there is nothing else to say 
 4 / "a"; //NaN
 ```
 
-
