@@ -3,12 +3,15 @@ date: 2020-05-02 06:51:00
 layout: post
 title: "JavaScript: Strict Mode"
 subtitle:
-description:
-image:
+description: Understand strict mode
+image: https://i0.wp.com/programmingwithmosh.com/wp-content/uploads/2019/05/strict-mode-__.png?ssl=1
 optimized_image:
-category:
+category: code
 tags:
-author:
+    - programming
+    - js
+    - javascript
+author: polowis
 paginate: false
 ---
 
