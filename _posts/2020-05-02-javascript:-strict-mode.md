@@ -80,7 +80,7 @@ bar = 1;
 ```
 
 
-### Some limited in Strict mode
+### Some limitations in Strict mode
 
 Let's see some rules in strict mode, which you won't be able to do once you use strict mode.
 
