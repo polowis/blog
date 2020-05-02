@@ -123,6 +123,13 @@ As you can see, normally, if you have "forgot" (or purposely "forgot"), without 
 
 But with **strict mode**, you won't be able to do it. 
 
+```js
+"use strict";
+
+a = 1;
+// ReferenceError: a is not defined
+```
+
 #### Throw errors when assignments cannot be performed
 
 Normally, if an object has a property ```writable``` equals false, then of course, you will not be able to overwrite the data on that property. But the problem is that the code keeps running. In **strict mode**, an error will be thrown. Now to understand it better, let's consider the following code
