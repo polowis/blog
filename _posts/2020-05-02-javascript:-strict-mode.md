@@ -239,3 +239,67 @@ But in ```strict mode```, you cannot use the variables outside ```eval```functio
 eval("var foo = 1");
 foo // Uncaught ReferenceError: foo is not defined
 ```
+
+#### You cannot use eval and arguments as an identifier
+
+In ```strict mode```, you will not be able to the keyword ```eval``` and ```arguments``` as variables name or function names or parameters name, etc.. If you try to use it purposely or unintentionally, it will throw syntax error.
+
+```js
+"use strict";
+var eval = 1;
+// Syntax Error
+function arguments() { };
+var foo = function eval() { };
+function bar(eval) { };
+
+```
+
+#### You cannot declare a function inside a block statement.
+
+```strict mode``` only allows you to declare a function in the outer scope or right inside a function. You will not be able to declare a function inside an ```if``` statement, or ```for``` loop, or a block (anything that start and ends with ```{}```).
+
+```js
+"use strict";
+function foo() {
+    function bar() { }; // OK
+}
+
+if (true) {
+    var baz = function () { return true }; // OK
+}
+
+{
+    function qux() { return true }; // SyntaxError
+}
+```
+
+#### You cannot use some words that may become keywords in the future
+
+
+From ES5, with Strict Mode, a name *will probably be used* in the future as a keyword could no longer be used as the ```identifier```.
+
+These words are included: 
+1. ```implements```
+2. ```interface```
+3. ```let```
+4. ```package```
+5. ```protected```
+6. ```private```
+7. ```public```
+8. ```static```
+9. ```yield```
+
+```js
+"use strict";
+// Uncaught SyntaxError: Unexpected Strict Mode reserved word
+var let = 1;
+function public() { };
+```
+----------------------------------------------------------------
+
+Strict Mode was created to help you avoid some unnecessary or silly errors when working with Javascript, it makes your code looks cleaner and more readable.
+
+
+Although when working with Strict Mode, you may initially have a lot of difficulties when some features can no longer be used, but in fact, what becomes bugs in ```Strict Mode``` are all things you should never be committed even when writing code in ```non-strict Mode```.
+
+If you ask whether you use Strict Mode, I think it's YES!
