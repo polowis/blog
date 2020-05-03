@@ -157,3 +157,85 @@ object.prop = 10;
 // // Uncaught TypeError: Cannot assign to read only property 'prop' of object #<Object>
 
 ```
+<img src="https://flaviocopes.com/javascript-strict-mode/read-only-property.png">
+
+#### Throws errors when you try to delete undeletable properties.
+
+There will be errors when you perform operations to remove variables, functions, or arguments.
+
+In addition, there will also be errors when you intentionally delete a property of an object that cannot be ```configurable```.
+
+
+```js
+"use strict";
+var foo = 1;
+function bar() {};
+delete foo; // Uncaught SyntaxError: Delete of an unqualified identifier in Strict Mode.
+delete bar;
+
+var obj = {};
+Object.defineProperty(obj, "baz", {
+    value: 1,
+    configurable: false
+});
+delete obj.baz; // Uncaught TypeError: Cannot delete property 'baz' of #<Object>
+
+```
+
+Please note that even in```normal mode```, you will not be able to perform the above example. However, the code will still run normally without any errors.
+
+#### Functions parameters cannot be the same
+
+If the parameters of a function have the same name, it will throw an error.
+
+```js
+"use strict";
+function foo(bar, bar) { 
+    // Uncaught SyntaxError: Duplicate parameter name not allowed in this context
+
+}
+foo(1, 2);
+```
+
+This will help you avoid silly errors if you accidentally write a wrong parameter's name. Having two or more parameters with the same is probably only caused by mistakes, there's almost no need for such as case.
+
+While in ```normal mode```, when you have parameters with the same name upon declaring a functon, of course the value of this parameter will override the previous one.
+
+#### You cannot use octal numbers
+
+Normally, if a number starts with 0, then JavaSript will interpret that as base 8 (octal). For example ```010``` === ```8``` will return ```true```.
+
+However, not everyone knows that, and the writing of ```010``` will probably make many people still understand that it is ```10```. Therefore in ```Strict Mode```, it is considered a syntax error.
+
+But with the introduction of **ES6**, you can still use the above cases by using prefix **0o**.  Even in ```strict mode```, ```var foo = 0o10``` is still considered as a valid way of writing, and ```0o10 === 8``` will return ```true```.
+
+#### You cannot use with
+
+```with``` is a dangerous statement, which can be confusing in many cases. Therefore, in ```Strict Mode```, it is completely removed, and if you intentionally use ```with```, you will get a Syntax Error.
+
+
+```js
+"use strict";
+var foo = 1;
+var bar = {foo: 2}
+with (bar) {
+  console.log(foo); 
+  // here you might get confused in determine whether foo is a variable or a property of bar
+}
+
+```
+
+#### You cannot use variables that are declared inside eval
+Normally, if your ```eval``` function has a variable declaration, the scope of that variable will be Global, or inside the function, where eval is called.
+
+```js
+eval("var foo = 1");
+foo // output: 1
+```
+But in ```strict mode```, you cannot use the variables outside ```eval```function.
+
+```js
+"use strict";
+eval("var foo = 1");
+foo // Uncaught ReferenceError: foo is not defined
+```
