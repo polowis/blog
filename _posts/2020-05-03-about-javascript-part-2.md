@@ -71,7 +71,7 @@ This object tree has a root called ```document```
 
 If you're looking for the explantion of scope, please refer to this [post](https://polowis.netlify.app/about-javascript). I believe that when you read articles about JavaScript, sometimes, you encounter this issue: **lexical scope**. If you want to understand this concept, you need to look at how JavaScript compiles and transpile the code
 
-<img src="http://creativejs.com/wp-content/uploads/2013/05/Compiler-architecture.png">
+<img src="https://i2.wp.com/www.vidyagyaan.com/wp-content/uploads/2019/06/Compiler-works.png?resize=655%2C292">
 
 When compile code, JavaScript engine will go through 3 stages
 
