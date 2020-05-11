@@ -54,7 +54,9 @@ By default the package already provides a translation method which is already im
 To retrieve the translation you may use the following syntax 
 
 ```html
+{% raw %}
 <h1>{{locale.lang("validation.email")}}</h1>
+{% endraw %}
 ```
 
 It will first look for your locale and see if it is supported by the application. Then it will look into the folder ```resources``` in order to get the translation needed. 
