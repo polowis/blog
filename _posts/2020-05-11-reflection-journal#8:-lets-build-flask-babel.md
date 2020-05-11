@@ -34,7 +34,7 @@ Good question. The files are stored inside ```app/resources/lang``` directory. A
 
 ## Use translation strings as keys
 
-Translation files that use translation strings as keys are stored as JSON files in the resources/lang directory. For example, if your application has a Spanish translation, you should create a resources/lang/es.json file. And you should give it a proper name so later you don't get confused when using them in your application. 
+Translation files that use translation strings as keys are stored as JSON files in the resources/lang directory. For example, if your application has a Spanish translation, you should create a ```resources/lang/es.json``` file. And you should give it a proper name so later you don't get confused when using them in your application. 
 ```js
 {
     "greeting_user": "Hello user";
