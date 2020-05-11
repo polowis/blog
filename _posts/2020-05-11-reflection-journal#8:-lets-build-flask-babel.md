@@ -72,7 +72,9 @@ And then to retrieve the value of the translation
 
 
 ```html
+{% raw %}
 <h1>{{locale.lang("greeting.welcome", name="John")}}</h1>
+{% endraw %}
 ```
 
 output: 
