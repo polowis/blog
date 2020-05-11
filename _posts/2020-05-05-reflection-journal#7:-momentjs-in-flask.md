@@ -3,7 +3,7 @@ date: 2020-05-05 07:43:40
 layout: post
 title: "Reflection Journal#7: MomentJS in Flask"
 subtitle:
-description:
+description: week 11, semester 1.
 image: https://miro.medium.com/max/918/1*s_yRzdt5-339dfl5r_AasQ.png
 optimized_image:
 category: code
