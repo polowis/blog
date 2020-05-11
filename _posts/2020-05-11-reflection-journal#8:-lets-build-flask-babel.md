@@ -1,7 +1,7 @@
 ---
 date: 2020-05-11 05:25:43
 layout: post
-title: "Reflection Journal#8: lets build flask-babel"
+title: "Reflection Journal#8: let's build flask-babel"
 subtitle:
 description: Week 12, Semester 1.
 image: https://www.ulatus.com/translation-blog/wp-content/uploads/2017/04/Web_Localization.jpg
