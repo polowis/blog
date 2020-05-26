@@ -88,10 +88,10 @@ class Application{
     public Enemy enemy;
     public static void main(String[] args){
         String enemyName = getEnemyName();
-        if(enemyName.isEquals('goblin')){
+        if(enemyName.equals('goblin')){
             enemy = new Goblin();
         }
-        else if(enemyName.isEquals('dracula')){
+        else if(enemyName.equals('dracula')){
             enemy = new Dracula();
         }
 
