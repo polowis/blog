@@ -3,7 +3,7 @@ date: 2020-05-27 01:39:45
 layout: post
 title: "Design principles you need to know"
 subtitle:
-description:
+description: Design principles you need to know
 image: https://miro.medium.com/max/800/0*aYobhP_7_dSiNlWZ
 optimized_image:
 category: blog
