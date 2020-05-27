@@ -52,3 +52,12 @@ The term **YAGNI** stands for **You aren't gonna need it**. **YAGNI** is the pri
 4. **Cost of carry**: In any case, you will also encounter this problem. You are adding a new amount of code to your project, making the system more complex and will take more effort to maintain, modify and debug. 
 
 In fact it is difficult to define the boundaries of **YAGNI**. There are many features or logic sections that you will have to consider whether or not it is **YAGNI**. Therefore, it is neccessary to have clear mind about **YAGNI**. **Martin Fowler** also made a suggestion that said "YAGNI only applies to the ability to be built into the software to support presumptive feature, it does not apply to the effort to make the software easier to modify". The **YAGNI** principle should only be used when you plan to add a feature that you *anticipate* to use in the future, rather than applying **YAGNI** in an effort to make the software easier to edit and maintain. 
+
+## Boy Scout Rule
+
+**Boy Scout Rule** is a principle that refer to the true rules of the Boy Scouts of America. The rules states that "Leave the campground cleaner than you found it". Basically saying keep the campsite as clean as when you first arrive. The **Boy Scout Rule** is applied in software design with content such as keeping the code cleaner than before the time you make any edits. 
+
+**Boy Scout Rule** is expressed in many way: **Always leave the code you're editing a little better than you found it**, **always leave the code cleaner/better than you found it**
+
+## SoC (Separation of Concerns)
+ 
