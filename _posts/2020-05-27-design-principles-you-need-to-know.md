@@ -61,3 +61,6 @@ In fact it is difficult to define the boundaries of **YAGNI**. There are many fe
 
 ## SoC (Separation of Concerns)
  
+The idea of ​​Separation of Concerns is to split the system into smaller components and functions, so that they have less in common (in terms of functionality), or the less dependent on each other the better. When components are integrated into the system, they interact with each other via interface information, or open APIs, without having to know how the other components are built or implemented.
+
+Separation of Concerns is a very important principle and is used a lot in the design and development of modern software. You can find it in many places, on large floors, or on small scale. 
