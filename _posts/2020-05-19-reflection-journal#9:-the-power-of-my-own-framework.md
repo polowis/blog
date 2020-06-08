@@ -6,8 +6,10 @@ subtitle:
 description: week 13 semester 1
 image: https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/07/sb-blog-programming.png
 optimized_image:
-category:
+category: blog
 tags:
+    - reflection
+    - flask
 author: polowis
 paginate: false
 ---
