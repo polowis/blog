@@ -59,4 +59,9 @@ Of course there are many techniques beside injecting the image tag but for the s
 
 There are many ways to prevent CSRF attack. 
 
-These include **captcha** validation
+These include **captcha** validation. **Flask** provides a handy way to prevent CSRF by using ```CSRFProtect()``` class. To make it easier, I decided to include the configuration logic inside my template. In the template, I have added an easy way to configurate CSRF protection. In the ```config.py```, you can configure CSRF protection by either enable or disable it.
+
+```py
+#Enable CSRF protection
+CSRF_ENABLED = True
+```
