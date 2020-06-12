@@ -37,6 +37,8 @@ In 2008, it was reported that about 18 million **eBay** accounts in **Korea** lo
 
 First, we need to understand how web applications work. Web applications work by receiving HTTP requests from the user and executing them. **CSRF** attack is a technique that trick users' browser to send HTTP requests to the web applications. This can be done by inserting malicious code or linking to websites that the user has already authenticated. In this case, the user's session has not expired and therefore the HTTP request will get executed with user's authentication rights.
 
+<img src="https://s3.amazonaws.com/com.twilio.prod.twilio-docs/original_images/el0otNMnu_Py7VYSUmd3KfC2f58jVjIAX24ff6e8DnY2qrh3Jw9pKYyGN4qQIIg2Dnl39evUcD.png">
+
 Consider the following example:
 
 Alice goes to her favorite web application as usual. Another user called Bob posts a message to a forum. Assume that Bob has a bad idea and he wants to delete all important project that Alice is working on. In this case, Bob is very smart so he will create a forum post including the following malicious code. 
