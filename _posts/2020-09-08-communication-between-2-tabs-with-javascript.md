@@ -4,7 +4,7 @@ layout: post
 title: "Communication between 2 browser tabs with JavaScript"
 subtitle:
 description:
-image:
+image: https://designmodo.com/wp-content/uploads/2016/10/Chrome54-3.jpg
 optimized_image:
 category:
 tags:
