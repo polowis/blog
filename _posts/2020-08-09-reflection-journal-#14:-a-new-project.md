@@ -6,7 +6,7 @@ subtitle:
 description: semester 2, week 3
 image: https://reg129.imperisoft.com/Pages/System/Image.aspx?id=32076&imgtype=1
 optimized_image:
-category:
+category: blog
 tags:
     - flask
     - js

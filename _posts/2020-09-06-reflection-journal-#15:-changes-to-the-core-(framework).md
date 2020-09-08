@@ -6,9 +6,11 @@ subtitle:
 description:
 image: https://www.reachfirst.com/wp-content/uploads/2018/08/Web-Development.jpg
 optimized_image:
-category:
+category: blog
 tags:
-author:
+    - flask
+    - reflection
+author: polowis
 paginate: false
 ---
 
