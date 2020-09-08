@@ -6,9 +6,11 @@ subtitle:
 description:
 image: https://designmodo.com/wp-content/uploads/2016/10/Chrome54-3.jpg
 optimized_image:
-category:
+category: blog
 tags:
-author:
+  - js
+  - javascript
+author: polowis
 paginate: false
 ---
 
