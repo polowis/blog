@@ -3,7 +3,7 @@ date: 2020-09-08 05:09:07
 layout: post
 title: "Reflection journal #15: Changes to the core (framework)"
 subtitle:
-description:
+description: semester 2, week 8
 image: https://www.reachfirst.com/wp-content/uploads/2018/08/Web-Development.jpg
 optimized_image:
 category: blog
