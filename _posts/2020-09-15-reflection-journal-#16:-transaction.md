@@ -6,8 +6,12 @@ subtitle:
 description: semester 2, week 10
 image: https://i.ytimg.com/vi/_rFqYgt7jxM/maxresdefault.jpg
 optimized_image:
-category:
+category: blog
 tags:
+  - python
+  - blockchain
+  - crytocurrency
+  - dapp
 author: polowis
 paginate: false
 ---
