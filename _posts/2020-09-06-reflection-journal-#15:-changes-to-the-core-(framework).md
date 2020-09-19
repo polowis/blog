@@ -16,7 +16,7 @@ paginate: false
 
 ## The Flask framework
 
-Currently, I'm focusing on making my own framework which is Pandoru a lot more powerful than before. I recently introduced a new Mailing system that is built inside Pandoru as an additional module so that people can easily sending emails without have to worry which library or frameworks need to be installed. Here is an example of people can use it:
+Currently, I'm focusing on making my own framework which is Beymax a lot more powerful than before. I recently introduced a new Mailing system that is built inside Beymax as an additional module so that people can easily sending emails without have to worry which library or frameworks need to be installed. Here is an example of people can use it:
 
 ```python
 from app.framework.util.mail import Mail
