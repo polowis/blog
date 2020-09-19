@@ -49,5 +49,106 @@ I also implemented a configuration command. All configuration files are stored i
 $ flask config:mail
 ```
 
+### Behind Mailing system
+Thanks to the community, we have Flask-Mail that helps you deal with sending email with Flask. However, you don't really need it, why? Because python already has built-in support for sending email! The problem with python built-in module is that, it's quite hard for beginners to understand how to use it. Let's start with a simple example
 
+```python
+import stmplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.application import MIMEApplication
+from email.utils import formatdate
+from email.mime.image import MIMEImage
+```
+We're gonna load all the neccessary modules here. By now you probably realize that it takes too much stuff just to send a single email while Flask-Mail handle all of it to you. However, building one by yourself isn't difficult. 
 
+We need to create a class here
+
+```python
+class Mail:
+    def __init__(self):
+        self.host = self._init_host()
+        self.use_ssl = True 
+```
+
+The init host method. We need to provide the credentials keys to login to mail server
+You need to specify the host, port, username and password. For security reason, I'm not going to show the sensitive information here but if you wish to obtain one, you can. There are plenty of email services that you can sign up for such as smtp, mailgun, etc.
+
+```py
+def _init_host(self):
+    if self.use_ssl:
+        host = smtplib.SMTP_SSL(MAIL_HOST, MAIL_PORT)
+    else:
+        host = smtplib.SMTP(MAIL_HOST, MAIL_PORT)
+
+    if MAIL_USE_TLS:
+        host.starttls()
+        
+        assert MAIL_USERNAME, "You must provide a username in order to login securely"
+        assert MAIL_PASSWORD, "You must provide a password in order to login securely"
+
+        host.login(MAIL_USERNAME, MAIL_PASSWORD)
+
+        return host
+```
+So in case if you forgot to put your username and password in, it will raise errors. Simple as that, once you login, you can start sending email straight from python. You can customize the class however you like, for example in my own framework
+
+```py
+def add_recipient(self, recipient):
+        """Adds another recipient to the message.
+        :param recipient: email address of recipient.
+        """
+
+        if type(self.recipients) == list:
+            self.recipients.append(recipient)
+
+        if type(self.recipients) == str:
+            temp = self.recipients
+            self.recipients = [temp].append(recipient)
+
+    def charset(self, charset):
+        """set the character set of this email"""
+        self.email_charset = charset
+        return self
+    
+    def html(self, html):
+        """Inject html code \n
+        """
+        if isinstance(html, str):
+            self._html = html
+        else:
+            raise TypeError("html must be a string")
+        return self
+
+    def view(self, filename):
+        """attach a HTML layout to this email"""
+        self.env_template = self.env.get_template(filename)
+        self.filename = filename
+        return self
+
+    def set_view_directory(self, directory_path):
+        """set the path to the folder containing the view of the email \n
+        :param directory_path: path to the directory
+        """
+        self.current_directory = directory_path
+        return self
+```
+
+The last step is to send the email. This is the most important part as you need to specify the content type. Sometimes, you want to send a text instead of html, or you might want to send html instead. For plain text, you might want to consider using this
+
+```py
+self.msg = MIMEMultipart()
+self.msg.attach(self._mimetext(self.text))
+if(type(self.recipients) == dict):
+    for recipient in self.recipients:
+        self.host.sendmail(self.from_sender, recipient, msg.as_string())
+    else:
+        self.host.sendmail(self.from_sender, self.recipients, msg.as_string())
+self.host.quit()
+```
+
+You might want to consider joining all recipients instead of looping through the list. There are more things need to be done here. How would you attach attachments? How would you let the users use html as a layout to send email? With Beymax, it handles it for you, including the most popular content formating (**Markdown**) that Flask-Mail does not have (1 point for Beymax :D), Beymax uses OOP structure ( + 1 point) Beymax allows users specify extra css links in html content through ```.add_css_link()``` method.  Instead of providng the whole text, users can also add text using ```line()``` method. By using this method, it automatically adds new line after each usage. For example:
+
+```py
+self.line("My header 1").line("My header 2")
+```
