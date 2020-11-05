@@ -39,7 +39,7 @@ To use this just simply run ```beymax run```. By extending the class ```command`
 
 ### Template engine (bx)
 
-Next one is the template engine. It has similar structure to Jinja2, a Flask's template engine. Here is a few example:
+Next one is the template engine. It has similar structure to Jinja2, a Flask's template engine. Any suspicious characters will be escaped automatically. Here is a few example:
 
 ```py
 html = """
@@ -51,21 +51,21 @@ template = Template(html).render(name="Jack")
 ```
 
 If statement:
-```py
-html = """
+```html
+{% raw %}
 <div> {% if condition > 1 %} <h1>Hello</h1> {% endif %}</div>
-"""
+{% endraw %}
 ```
 Loop:
 
-```py
+```html
 
-html = """
+{% raw %}
 <div> {% foreach users as user %}
     <li>{{user}}</li>
     {% endfor %}
 <div>
-"""
+{% endraw %}
 ```
 Beymax also provides a way to write your own Validation Rules by extend the class as well!
 
