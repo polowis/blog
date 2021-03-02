@@ -9,4 +9,4 @@ permalink: /about/
 
 # About
 
-I am studying at Gungahlin College, I expect to graduate in December, 2020. I'm making pet projects on Github these days, just to learn some new languages and tools for future development works
+I am studying Bachelor of Software and Network Engineering, I expect to graduate in December, 2024. I'm making pet projects on Github these days, just to learn some new languages and tools for future development works
